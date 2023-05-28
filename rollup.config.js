@@ -10,8 +10,7 @@ export default [
 		output: {
 			name: 'Quadtree',
 			file: pkg.browser,
-			format: 'umd',
-            exports: 'default'
+			format: 'umd'
 		},
 		plugins: [
 			typescript({ tsconfig: './tsconfig.json' }), // so Rollup can convert TypeScript to JavaScript
@@ -25,8 +24,7 @@ export default [
 		output: {
 			name: 'Quadtree',
 			file: pkg.browser.replace('.umd.full.', '.umd.basic.'),
-			format: 'umd',
-            exports: 'default'
+			format: 'umd'
 		},
 		plugins: [
 			typescript({ tsconfig: './tsconfig.json' }), // so Rollup can convert TypeScript to JavaScript
